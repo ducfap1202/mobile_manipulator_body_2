@@ -1,6 +1,3 @@
-# YOUR_REPO_NAME
-
-## Project Description
 
 This repository contains the RDF descriptions of a mobile robot equipped with a manipulator arm. The robot features a suite of navigation and localization algorithms including:
 
@@ -26,6 +23,13 @@ To use this project, you need to have ROS (Robot Operating System) installed on 
 
     This will compile all the necessary ROS packages and nodes for the project.
 
+
+3. Install some addon
+ If you runing robot have some error like amcl or move-base, don't worry, you must install this with base command
+    sudo apt install ros-noetic-( missing you have)
+Example: amcl
+    sudo apt install ros-noetic-amcl
+
 ## Running the Project
 
 To launch the simulation and start the robot, use the following commands:
@@ -38,30 +42,10 @@ To launch the simulation and start the robot, use the following commands:
     ```bash
     roslaunch mobile_robot move_base.launch
     ```
-3. To send goals to the robot, use:
-    ```bash
-    rosrun mobile_robot send_goals
-    ```
-
-## Visualization
-
-### Robot in Gazebo
-
-![Robot in Gazebo](images/gazebo1.png)
-
-This image shows the robot in the Gazebo simulation environment, where you can test the robot's physical properties and interactions with the world.
-
-### Robot in RViz
-
-![Robot in RViz](images/rviz1.png)
-
-Additional RViz View:
-
-![Additional RViz View](images/rviz2.png)
-
-Here, the robot is visualized in RViz, allowing for detailed observation of sensor data, navigation paths, and the overall state of the robot in a simulated environment.
 
 
----
+
+
+## That model is base on automaticaddison .com
 
 We hope this project serves as a valuable tool for your robotics research and development. Happy coding!
